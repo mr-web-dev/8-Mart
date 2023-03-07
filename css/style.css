@@ -1,20 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:focus{
+:focus {
     outline: 5px dotted var(--primary) !important;
     outline-offset: 3px;
 }
 
-::selection{
-    background-color: var(--darkBg);
+::selection {
+    background-color: var(--primary);
     color: var(--lightColor);
 }
 
-:root{
+:root {
     --darkColor: #000;
     --darkBg: #000;
     --lightColor: #fff;
@@ -23,11 +23,15 @@
     --btn: #54a9eb;
 }
 
-body{
+html{
+    scroll-behavior: smooth;
+}
+
+body {
     font-family: 'Poppins', 'Roboto', sans-serif;
 }
 
-.container{
+.container {
     width: 100%;
     max-width: 1240px;
     padding-left: 20px;
@@ -40,7 +44,7 @@ body{
 
 /* MyIcon start */
 
-.my-icon{
+.my-icon {
     width: 65px;
     height: 65px;
     position: fixed;
@@ -53,7 +57,7 @@ body{
     z-index: 100;
 }
 
-.my-icon__img{
+.my-icon__img {
     width: 100%;
     border-radius: 50%;
 }
@@ -64,7 +68,7 @@ body{
 
 /* hero start */
 
-.hero{
+.hero {
     width: 100%;
     min-height: 100vh;
     position: relative;
@@ -80,7 +84,7 @@ body{
     z-index: 1;
 }
 
-.hero::after{
+.hero::after {
     content: '';
     width: 100%;
     height: 100%;
@@ -94,7 +98,7 @@ body{
 }
 
 
-.hero__title{
+.hero__title {
     width: 100%;
     max-width: 800px;
     font-weight: 700;
@@ -103,7 +107,7 @@ body{
     margin-bottom: 10px;
 }
 
-.hero__btn{
+.hero__btn {
     display: inline-block;
     padding: 5px 20px;
     background-color: var(--primary);
@@ -116,16 +120,16 @@ body{
     transition: 0.4s;
 }
 
-.hero__btn:hover{
+.hero__btn:hover {
     opacity: 0.8;
 }
 
-.hero__btn:active{
+.hero__btn:active {
     opacity: 0.6;
     cursor: progress;
 }
 
-.btn__gift{
+.btn__gift {
     --fa-animation-duration: 3s;
     --fa-animation-delay: 3s;
 }
@@ -136,7 +140,7 @@ body{
 
 /* tabrik start */
 
-.tabrik{
+.tabrik {
     width: 100%;
     min-height: 100vh;
     padding-top: 50px;
@@ -146,14 +150,14 @@ body{
     align-items: center;
 }
 
-.tabrik__container{
+.tabrik__container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
 }
 
-.tabrik__img-wrap{
+.tabrik__img-wrap {
     width: 90%;
     height: 90%;
     max-width: 400px;
@@ -165,7 +169,7 @@ body{
     margin-left: 30px;
 }
 
-.tabrik__img-wrap::after{
+.tabrik__img-wrap::after {
     content: '';
     width: 95%;
     height: 95%;
@@ -176,22 +180,22 @@ body{
     z-index: -1;
 }
 
-.tabrik__img-wrap:hover .tabrik__img{
+.tabrik__img-wrap:hover .tabrik__img {
     scale: 1.5;
 }
 
-.tabrik__img-box{
+.tabrik__img-box {
     overflow: hidden;
     border: 10px solid var(--lightBg);
 }
 
-.tabrik__img{
+.tabrik__img {
     width: 100%;
     display: flex;
     transition: 1s;
 }
 
-.tabrik__text-box{
+.tabrik__text-box {
     width: 100%;
     max-width: 500px;
     display: grid;
@@ -200,13 +204,13 @@ body{
     gap: 20px;
 }
 
-.tabrik__title{
+.tabrik__title {
     font-weight: 700;
     font-size: 35px;
     color: var(--darkColor);
 }
 
-.tabrik__text{
+.tabrik__text {
     font-weight: 400;
     font-size: 20px;
     color: var(--darkColor);
@@ -214,12 +218,12 @@ body{
     user-select: none !important;
 }
 
-b.underline{
+b.underline {
     font-weight: 600;
     user-select: text;
 }
 
-.btn{
+.btn {
     display: inline-block;
     padding: 5px 20px;
     font-size: 20px;
@@ -231,16 +235,16 @@ b.underline{
     transition: 0.4s;
 }
 
-.btn:focus{
+.btn:focus {
     outline: 5px dotted var(--btn) !important;
     outline-offset: 3px;
 }
 
-.btn:hover{
+.btn:hover {
     opacity: 0.8;
 }
 
-.btn:active{
+.btn:active {
     opacity: 0.6;
     cursor: progress;
 }
@@ -251,18 +255,18 @@ b.underline{
 
 /* footer start */
 
-.footer{
+.footer {
     padding-top: 5px;
     background-color: var(--darkBg);
 }
 
-.footer__container{
+.footer__container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer__title{
+.footer__title {
     font-weight: 400;
     font-size: 20px;
     color: var(--lightColor);
@@ -275,9 +279,9 @@ b.underline{
 
 /* @media start */
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
 
-    .hero{
+    .hero {
         background: url(../img/bg_pad.jpg);
         background-size: cover;
         background-repeat: no-repeat;
@@ -286,16 +290,17 @@ b.underline{
 
 }
 
-@media (max-width: 1020px){
+@media (max-width: 1020px) {
 
-    .tabrik__container{
+    .tabrik__container {
         flex-direction: column-reverse;
     }
 
 }
-@media (max-width: 425px){
 
-    .hero{
+@media (max-width: 425px) {
+
+    .hero {
         padding: 0;
         background: url(../img/bg_phone.jpg);
         background-size: contain;
@@ -306,21 +311,21 @@ b.underline{
 
 }
 
-@media (max-width: 375px){
+@media (max-width: 375px) {
 
-    .hero__title{
+    .hero__title {
         font-size: 50px;
     }
 
 }
 
-@media (max-width: 320px){
+@media (max-width: 320px) {
 
-    .my-icon{
+    .my-icon {
         width: 50px;
         height: 50px;
     }
-    
+
 }
 
 /* @media end */
