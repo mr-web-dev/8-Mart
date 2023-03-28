@@ -54,6 +54,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    transition: 0.4s;
     z-index: 100;
 }
 
