@@ -7,6 +7,7 @@
 :focus {
     outline: 5px dotted var(--primary) !important;
     outline-offset: 3px;
+    transition: all 0.4s ease-in-out;
 }
 
 ::selection {
@@ -15,10 +16,10 @@
 }
 
 :root {
-    --darkColor: #000;
+    --darkColor: #222;
     --darkBg: #000;
     --lightColor: #fff;
-    --lightBg: #fff;
+    --lightBg: #eee;
     --primary: crimson;
     --btn: #54a9eb;
 }
@@ -29,6 +30,11 @@ html{
 
 body {
     font-family: 'Poppins', 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: normal;
+    color: var(--darkColor);
+    background-color: var(--lightBg);
 }
 
 .container {
@@ -40,9 +46,14 @@ body {
     margin-right: auto;
 }
 
+.primary{
+    color: var(--primary);
+    transition: all 0.4s ease-in-out;
+}
 
 
-/* MyIcon start */
+
+/* My-icon start */
 
 .my-icon {
     width: 65px;
@@ -54,7 +65,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    transition: 0.4s;
+    transition: all 0.1s;
     z-index: 100;
 }
 
@@ -63,7 +74,7 @@ body {
     border-radius: 50%;
 }
 
-/* MyIcon end */
+/* My-icon end */
 
 
 
@@ -182,7 +193,7 @@ body {
 }
 
 .tabrik__img-wrap:hover .tabrik__img {
-    scale: 1.5;
+    scale: 1.3;
 }
 
 .tabrik__img-box {
@@ -258,7 +269,7 @@ b.underline {
 
 .footer {
     padding-top: 5px;
-    background-color: var(--darkBg);
+    background-color: var(--primary);
 }
 
 .footer__container {
@@ -267,7 +278,7 @@ b.underline {
     align-items: center;
 }
 
-.footer__title {
+.footer__link {
     font-weight: 400;
     font-size: 20px;
     color: var(--lightColor);
